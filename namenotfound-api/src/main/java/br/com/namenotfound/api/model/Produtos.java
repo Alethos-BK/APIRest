@@ -1,13 +1,31 @@
 package br.com.namenotfound.api.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+import com.sun.istack.NotNull;
 
+@Entity
+@Table(name = "produto")
 public class Produtos {
-    
+	
+    @Id
+    @GeneratedValue(strategy=GenerationType.AUTO)
     private Long id;
+    
+    @NotNull
     private String nome;
+    
+    
     private Integer quantidade;
+    
+    @NotNull
     private Double valor;
+    
+    @NotNull
     private String observacao;
 
     public Produtos(){}
