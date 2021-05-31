@@ -26,7 +26,7 @@ public class Cliente{
     public String sexo;
 
     @NotNull
-    public String estadoCivil;
+    public EstadoCivil estadoCivil;
 
     @NotNull
     public String profissao;
@@ -40,7 +40,7 @@ public class Cliente{
         String nome, 
         Integer idade, 
         String sexo, 
-        String estadoCivil, 
+        EstadoCivil estadoCivil, 
         String profissao, 
         String cpfOuCnpj){
 
@@ -84,24 +84,24 @@ public class Cliente{
     }
 
     public EstadoCivil getEstadoCivil(){
-        return this.EstadoCivil;
+        return this.estadoCivil;
     }
 
     public void setEstadoCivil(EstadoCivil estadoCivil){
-        this.EstadoCivil = estadoCivil; 
+        this.estadoCivil = estadoCivil; 
     }
 
-    public Proficao getProficao(){
-        return this.proficao;
+    public String getProficao(){
+        return this.profissao;
     }
-    public Proficao setProficao(Proficao proficao){
-        this.Proficao = proficao;
+    public void setProficao(String proficao){
+        this.profissao = proficao;
     }
 
     public String getCpfOuCnpj(){
-        return this.cpfOuCnpj
+        return this.cpfOuCnpj;
     }
-    public void setCpfOuCnpj(CpfOuCnpj cpfOuCnpj){
+    public void setCpfOuCnpj(String cpfOuCnpj){
         this.cpfOuCnpj = cpfOuCnpj;
     }
 
