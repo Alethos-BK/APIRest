@@ -1,4 +1,0 @@
-Produto: id, nome, quantidade, valor, observacao
-Cliente: id, nome, idade, sexo, estadoCivil, profissao, cpfOuCnpj
-
-

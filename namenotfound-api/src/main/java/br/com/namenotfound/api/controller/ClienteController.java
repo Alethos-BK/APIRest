@@ -1,4 +1,4 @@
-package com.lojinha.namenotfound.controller;
+package br.com.namenotfound.api.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
@@ -14,7 +14,7 @@ public class ClienteController {
     @GetMapping
     public List<Cliente> obter(){
         return this._clienteRepository.findAll();
-        
+
     }
     @PostMapping
     public Cliente adicionar(@RequestBody Cliente cliente){
@@ -30,6 +30,6 @@ public class ClienteController {
     public Cliente atualizar(@PathVariable (value = "id")
 
 
-    
-    
+
+
 }

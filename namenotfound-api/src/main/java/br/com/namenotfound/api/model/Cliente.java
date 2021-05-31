@@ -1,11 +1,12 @@
-package com.lojinha.namenotfound.model;
+package br.com.namenotfound.api.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import com.sun.istack.NotNull;
 import javax.persistence.Table;
+
+import com.sun.istack.NotNull;
 
 @Entity
 @Table(name = "cliente")
@@ -105,6 +106,3 @@ public class Cliente{
     }
 
 }
-
-
-
